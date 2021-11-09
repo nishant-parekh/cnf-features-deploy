@@ -1,0 +1,15 @@
+apiVersion: ran.openshift.io/v1
+kind: PolicyGenTemplate
+metadata:
+  name: "examplePolicy"
+  namespace: "example-policy"
+spec:
+  bindingRules:
+    common: "true"
+  sourceFiles:
+    - fileName: PtpSubscription.yaml
+      policyName: "ptp-sub-policy"
+    - fileName: PtpSubscriptionNS.yaml
+      policyName: "ptp-sub-policy"
+    - fileName: PtpSubscriptionOperGroup.yaml
+      policyName: "ptp-sub-policy"
