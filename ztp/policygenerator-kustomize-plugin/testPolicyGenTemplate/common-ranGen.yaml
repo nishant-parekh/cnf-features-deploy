@@ -34,3 +34,5 @@ spec:
       policyName: "storage-sub-policy"
     - fileName: ReduceMonitoringFootprint.yaml
       policyName: "mon-offload-policy"
+    - fileName: ClusterVersion.yaml
+      policyName: "cluster-version-policy"

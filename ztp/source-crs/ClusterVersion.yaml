@@ -5,8 +5,15 @@ metadata:
   annotations:
     ran.openshift.io/ztp-deploy-wave: "100"
 spec:
-  channel: $channel
+  channel: stable-4.10
   desiredUpdate:
     force: false
-    version: $version
+    version: 4.10.0
   upstream: https://api.openshift.com/api/upgrades_info/v1/graph # default upstream.
+status:
+  conditions:
+    - type: Available
+      status: "True"
+  history:
+    -  version: 4.10.0
+       state: "Completed"
